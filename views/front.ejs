@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form Tutorial</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+		.nameText{
+		color:green;
+		}
+		h1.logoutText {
+			float: right;
+			margin-top: -60px;
+		}
+		h1.logoutText a {
+		color: #e90b0b;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="login-form">
+			<h1>Wellcom to dashboard</h1>
+			<h1 class="logoutText"><a href="/logout">Logout</a></h1>
+			<% if(message){%>
+			<h2>Hello:<span class="nameText"> <%= message.name%></span></h2>
+			<%}%>
+		</div>
+		
+		
+		<div class="container">
+  <h2>All Users Record Table</h2>          
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>Mobile</td>
+        <td><img src="/uploads/1583067965823lovepreet.jpg"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+		
+		
+	</body>
+</html>
